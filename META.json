@@ -1,0 +1,41 @@
+{
+   "name": "worker_spark",
+   "abstract": "A background worker which regularly launches a procedure.",
+   "description": "A background worker for PostgreSQL 9.3 which launches a given procedure in a given database at regular intervals.",
+   "version": "0.0.1",
+   "maintainer": "Gianni Ciolli <gianni.ciolli@2ndquadrant.it>",
+   "license": {
+      "PostgreSQL": "http://www.postgresql.org/about/licence"
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "9.3.0"
+         }
+      }
+   },
+   "provides": {
+      "worker_spark": {
+         "abstract": "A background worker for PostgreSQL 9.3 which executed a procedure at regular intervals.",
+         "file": "worker_spark.c",
+         "docfile": "README.md",
+         "version": "0.0.1"
+      }
+   },
+   "resources": {
+      "repository": {
+        "url":  "git://github.com/gciolli/worker_spark.git",
+        "web":  "https://github.com/gciolli/worker_spark",
+        "type": "git"
+      }
+   },
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "generated_by": "Gianni Ciolli",
+   "tags": [
+      "custom background worker",
+      "spark"
+   ]
+}

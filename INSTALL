@@ -1,0 +1,4 @@
+The installation procedure is standard, and relies on PGXS:
+
+$ make
+$ sudo make install
